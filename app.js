@@ -21,6 +21,7 @@ app.listen(PORT_NUMBER, ()=>{
 // // now the express server will expect messages from /api/messages
 // // the 2nd argument is normally used as the callback function
 app.post('/api/messages', connector.listen());
+// this is also the chatbot endpoint if moving 
 
 const bot = new builder.UniversalBot(connector
 //     // , (session) => {
