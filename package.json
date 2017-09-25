@@ -13,6 +13,9 @@
     "express": "^4.15.4",
     "greeting": "^1.0.6"
   },
+  "engines":{
+    "node":"6.11.2"
+  },
   "devDependencies": {},
   "description": ""
 }
