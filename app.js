@@ -3,8 +3,8 @@ const express = require('express');
 
 const app = express();
 const connector = new builder.ChatConnector({
-    appId: "0d51802b-5324-4007-9b84-c2d6d32cce8b",
-    appPassword: "DYKW7EkfWsVYkpkOcMKwAny",
+    appId: process.env.MICROSOFT_APP_ID,
+    appPassword: process.env.MCIROSOFT_APP_PASSWORD,
 //     // when deploying it live to use, must register the bot with Microsoft with developer portal
 //     // process.env are the environment variables for node.js. environment variables are variables stored locally
 });
