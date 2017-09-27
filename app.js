@@ -12,7 +12,7 @@ const connector = new builder.ChatConnector({
 const PORT_NUMBER = 3978;
 // // similar to the listen function on the console bot. using the app variable.
 // // expres is the backbone for the server
-app.listen(PORT_NUMBER, ()=>{
+app.listen(process.env.port || PORT_NUMBER, ()=>{
     console.log(`chatbot server started and listening to port ${PORT_NUMBER}`);
 });
 
